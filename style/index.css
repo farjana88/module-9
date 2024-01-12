@@ -1,0 +1,140 @@
+/* import work sans font */
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800;900&family=Open+Sans:wght@400;600;700;800&family=Work+Sans:wght@400;500;600;700;800&display=swap');
+
+
+*{
+    font-family: 'Work Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    background-color: rgba(255, 144, 14, 0.10);
+    padding: 50px 240px;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-title{
+    color:  #131313;
+    text-align: center;
+    font-size: 45px;
+    font-weight: 700;
+
+}
+nav ul{
+    display: flex;
+    list-style: none;
+    
+}
+
+nav ul li{
+    margin-left: 26px;
+}
+ul li a{
+     text-decoration: none;
+    }
+   .banner-content{
+    max-width: 860px;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 150px;
+   }
+   .banner-title{
+    color:  #131313;
+    text-align: center;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 700;
+    
+   }
+   .banner-description{
+    color: #727272;
+    text-align: center;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px; 
+    margin-top: 20px;
+   }
+   .btn-primary{
+    width: 180px;
+    height: 64px;
+    border: hidden;
+    border-radius: 8px;
+    background: #FF900E;
+    color: #FFF;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 20px;
+    }
+    .banner img{
+        width: 100%;
+        margin-top: 20px;
+    }
+  
+
+    main{
+        max-width: 80%;
+        margin: 70px auto;
+    }
+    .teams-container{
+        display: flex;
+        align-items: center;
+        gap: 75px;
+    }
+    .team-img-container{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 24px;
+    }
+    .quick-list{
+        color:  #727272;
+        font-size: 45px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+    }
+    .of-our{
+        color:  #131313;
+        font-size: 45px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+    }
+    .features{
+        color: #FF900E;
+        font-size: 45px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+    }
+    .team-content h3{
+        width: 460px;
+    }
+
+
+    @media screen and (max-width: 576px){
+        header{
+            padding: 20px;
+        }
+        nav, .teams-container{
+            flex-direction: column;
+            }
+            .team-img-container{
+                grid-template-columns: 1fr;
+            }
+    }
+    @media screen and (min-width: 576px) and (max-width: 992px) {
+        header{
+            padding: 50px;
+        }
+        nav, .teams-container{
+            flex-direction: column;
+        }
+        }
